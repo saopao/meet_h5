@@ -3,6 +3,7 @@ import serveIcon from '@/assets/serve.svg'
 import './index.scss'
 
 import Ad from './ad/index'
+import HomeModule from './module/index'
 
 const Home = () => {
     return (
@@ -12,7 +13,10 @@ const Home = () => {
                 <img src={searchIcon} alt="icon" />
                 <img src={serveIcon} alt="icon" />
             </div>
+            {/* 广告 */}
             <Ad />
+            <HomeModule title="最近更新" />
+            <HomeModule title="热门影片" />
         </div>
     )
 }
