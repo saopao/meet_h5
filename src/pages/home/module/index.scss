@@ -41,7 +41,8 @@
                 position: relative;
                 width: 100%;
                 height: 180px;
-                background: url('@/assets/bb.png') no-repeat center / cover;
+                // background: url('@/assets/bb.png') no-repeat center / cover;
+                border: 1px solid pink;
                 border-radius: 10px;
                 p {
                     position: absolute;

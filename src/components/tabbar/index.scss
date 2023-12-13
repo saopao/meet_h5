@@ -1,12 +1,42 @@
 .TabBar {
+    display: flex;
+    align-items: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 120px;
-    background: #252233;
-    -webkit-backdrop-filter: blur(1000px);
-    backdrop-filter: blur(1000px);
     border-radius: 30px 30px 0 0;
     overflow: hidden;
+    background: radial-gradient(transparent, #252233 2px);
+    background-size: 3px 3px;
+    backdrop-filter: blur(1000px);
+    .TabBar_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 33.33%;
+        height: 100%;
+        span {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+        &:nth-child(1) {
+            span {
+                background: url('@/assets/home.png') no-repeat center/ 50px 50px;
+            }
+        }
+        &:nth-child(2) {
+            span {
+                background: url('@/assets/vip.png') no-repeat center/ 47px 45px;
+            }
+        }
+        &:nth-child(3) {
+            span {
+                background: url('@/assets/mine.png') no-repeat center/ 48px 48px;
+            }
+        }
+    }
 }
