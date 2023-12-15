@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
-import Home from './pages/home'
 import TabBar from './components/tabbar/index'
-import { RouterProvider } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import RouterConfig from './routes/router'
 import './App.css'
 const App = () => {
     return (
-        <div className="App">
-            <Home />
-            <TabBar />
-        </div>
+        <Router>
+            <div className="App">
+                <RouterConfig />
+                <TabBar />
+            </div>
+        </Router>
     )
 }
 export default App

@@ -18,24 +18,45 @@
         justify-content: center;
         width: 33.33%;
         height: 100%;
+        text-decoration: none;
         span {
             display: inline-block;
             width: 50px;
             height: 50px;
         }
+        p {
+            margin-top: 10px;
+            font-size: 24px;
+            font-family: Helvetica, Helvetica;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 24px;
+        }
+        p.active {
+            color: #b547f2;
+        }
         &:nth-child(1) {
             span {
-                background: url('@/assets/home.png') no-repeat center/ 50px 50px;
+                background: url('@/assets/homed.png') no-repeat center/ 45px 45px;
+            }
+            span.active {
+                background: url('@/assets/home.png') no-repeat center/ 45px 45px;
             }
         }
         &:nth-child(2) {
             span {
-                background: url('@/assets/vip.png') no-repeat center/ 47px 45px;
+                background: url('@/assets/vipd.png') no-repeat center/ 42px 40px;
+            }
+            span.active {
+                background: url('@/assets/vip.png') no-repeat center/ 42px 40px;
             }
         }
         &:nth-child(3) {
             span {
-                background: url('@/assets/mine.png') no-repeat center/ 48px 48px;
+                background: url('@/assets/mined.png') no-repeat center/ 43px 43px;
+            }
+            span.active {
+                background: url('@/assets/mine.png') no-repeat center/ 43px 43px;
             }
         }
     }

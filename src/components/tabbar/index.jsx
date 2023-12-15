@@ -1,19 +1,20 @@
-import React, { useState, useCallback } from 'react'
-import homeIcon1 from '@/assets/homed.png'
-import homeIcon2 from '@/assets/home.png'
-import vipIcon1 from '@/assets/vipd.png'
-import vipIcon2 from '@/assets/vip.png'
-import mineIcon1 from '@/assets/mined.png'
-import mineIcon2 from '@/assets/mine.png'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './index.scss'
 const TabBar = () => {
-    const tabs = ['首页', '会员专区', '我的']
+    const TABS = [
+        { title: '首页', path: '/' },
+        { title: '会员', path: '/vip' },
+        { title: '我的', path: '/mine' }
+    ]
+    const [active, setActive] = useState(0)
     return (
         <div className="TabBar">
-            {tabs.map((e) => (
-                <div className="TabBar_item" key={e}>
-                    <span></span>
-                </div>
+            {TABS.map((e, i) => (
+                <Link to={e.path} key={i} className="TabBar_item" onClick={() => setActive(i)}>
+                    <span className={i === active ? 'active' : ''}></span>
+                    <p className={i === active ? 'active' : ''}>{e.title}</p>
+                </Link>
             ))}
         </div>
     )

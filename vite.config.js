@@ -27,6 +27,7 @@ export default defineConfig((config) => {
             }
         },
         server: {
+            host: '0.0.0.0',
             port: 5188 //vite项目启动时自定义端口
         },
         // 路径别名的配置
@@ -40,7 +41,7 @@ export default defineConfig((config) => {
                 '@api': path.resolve(__dirname, './src/server/api'),
                 '@store': path.resolve(__dirname, './src/store'),
                 '@stores': path.resolve(__dirname, './src/stores'),
-                '@page': path.resolve(__dirname, './src/page'),
+                '@pages': path.resolve(__dirname, './src/pages'),
                 '@hooks': path.resolve(__dirname, './src/hooks'),
                 '@constants': path.resolve(__dirname, './src/constants')
             }
