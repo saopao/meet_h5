@@ -33,40 +33,5 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0 25px;
-        box-sizing: border-box;
-        .Home_module_item {
-            margin-bottom: 25px;
-            width: 335px;
-            .Home_module_item_content {
-                position: relative;
-                width: 100%;
-                height: 180px;
-                // background: url('@/assets/bb.png') no-repeat center / cover;
-                border: 1px solid pink;
-                border-radius: 10px;
-                p {
-                    position: absolute;
-                    right: 10px;
-                    bottom: 10px;
-                    padding: 6px 20px;
-                    background: rgba(0, 0, 0, 0.5);
-                    border-radius: 15px;
-                    font-size: 20px;
-                    color: #b8babc;
-                    font-weight: 600;
-                }
-            }
-            .Home_module_item_title {
-                margin-top: 20px;
-                font-size: 22px;
-                line-height: 30px;
-                color: #b8babc;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-        }
     }
 }

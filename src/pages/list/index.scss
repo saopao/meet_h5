@@ -1,0 +1,61 @@
+.ListPage {
+    height: 100%;
+    overflow-y: auto;
+    .List_head {
+        padding: 30px 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            &:nth-child(1) {
+                color: #b8babc;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            &:nth-child(2) {
+                padding: 10px 0 15px 0;
+                color: #fff;
+                font-size: 40px;
+                font-weight: bold;
+                font-family: '楷体';
+            }
+            &:nth-child(3) {
+                color: #b8babc;
+                font-size: 22px;
+            }
+        }
+    }
+    .List_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .List_pagination {
+        padding: 0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        border: 1px solid red;
+        box-sizing: border-box;
+        font-size: 26px;
+        color: #b8babc;
+        p {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+        div {
+            border: 1px solid red;
+            input {
+                width: 60px;
+                height: 60px;
+                outline: none;
+                background: none;
+                border: none;
+            }
+        }
+    }
+}

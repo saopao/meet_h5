@@ -1,32 +1,4 @@
 .Home {
-    height: 100%;
-    overflow-y: auto;
-    .head {
-        position: sticky;
-        top: 0;
-        left: 0;
-        padding: 0 10px 0 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 88px;
-        box-sizing: border-box;
-        z-index: 2;
-        background: radial-gradient(transparent, #252233 2px);
-        background-size: 3px 3px;
-        backdrop-filter: blur(1000px);
-        h1 {
-            margin-right: auto;
-            font-size: 40px;
-            font-family: PingFang SC, PingFang SC;
-            font-weight: 600;
-            line-height: 40px;
-            color: #fff;
-        }
-        img {
-            padding: 15px;
-            width: 30px;
-            height: 30px;
-        }
-    }
+    flex: 1;
+    overflow: auto;
 }
