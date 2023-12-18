@@ -1,4 +1,4 @@
-import Ad from './ad/index'
+// import Ad from './ad/index'
 import HomeModule from './module/index'
 import Header from '@/components/header'
 import './index.scss'
@@ -8,7 +8,7 @@ const Home = () => {
         <div className="Home">
             <Header />
             {/* 广告 */}
-            <Ad />
+            {/* <Ad /> */}
             <HomeModule title="最近更新" />
             <HomeModule title="热门影片" />
         </div>

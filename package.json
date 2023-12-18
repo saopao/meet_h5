@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "antd-mobile": "^5.33.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "postcss-px-to-viewport": "^1.1.1",
